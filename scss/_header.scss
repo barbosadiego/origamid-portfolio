@@ -4,11 +4,12 @@
 @import './components/base';
 
 .header {
+  padding: 20px;
+  
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: rem(10);
   }
   .menu {
     position: fixed;

@@ -13,7 +13,10 @@ body{
   background-color: $bg-color;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+article{
+  padding: 20px 0;
 }
 
 a{

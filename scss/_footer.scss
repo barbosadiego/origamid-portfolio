@@ -1,0 +1,21 @@
+@import './components/functions';
+@import './components/mixins';
+@import './components/variables';
+
+.footer{
+  padding: 20px;
+  background-color: $c13;
+  display: grid;
+  gap: 20px;
+
+  p{
+    color: $c4;
+    margin: 20px 0;
+  }
+
+  a{
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
