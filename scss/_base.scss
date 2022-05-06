@@ -1,5 +1,17 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Fira Sans', sans-serif;
+  background-color: $bg-color;
+  padding: rem(10);
 }
 
 a{
