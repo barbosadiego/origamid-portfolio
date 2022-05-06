@@ -1,0 +1,37 @@
+@import './components/functions';
+@import './components/variables';
+@import './components/mixins';
+
+.intro{
+  display: grid;
+  justify-content: center;
+  
+  &__img{
+    display: none;
+  }
+
+  &__text{
+    width: 100%;
+    position: relative;
+
+    h1{
+      font-size: rem(50);
+      text-transform: capitalize;
+      margin-bottom: 15px;
+
+      &::before{
+        content: '';
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        background-image: url(../images/favicon.svg);
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        top: -5px;
+        left: -15px;
+        z-index: -1;
+      }
+    }
+  }
+}

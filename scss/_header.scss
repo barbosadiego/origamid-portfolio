@@ -1,6 +1,7 @@
-@import './functions';
-@import './mixins';
-@import './variables';
+@import './components/functions';
+@import './components/mixins';
+@import './components/variables';
+@import './components/base';
 
 .header {
   nav {
@@ -28,7 +29,7 @@
 
     a {
       color: $c13;
-      font-size: rem(28);
+      font-size: rem(38);
       text-transform: capitalize;
     }
   }
