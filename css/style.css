@@ -242,6 +242,7 @@ img {
   flex: 1;
   padding: 10px;
   display: grid;
+  border-radius: 3px;
 }
 .formacao__box div h4 {
   font-weight: 400;
