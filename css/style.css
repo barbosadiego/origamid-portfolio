@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +8,9 @@
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: #fff;
-  padding: 0.625rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 a {
@@ -35,10 +35,9 @@ img {
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: #fff;
-  padding: 0.625rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 a {
@@ -133,7 +132,7 @@ img {
 }
 
 .experiencia {
-  padding: 10px;
+  padding: 20px;
 }
 .experiencia__text {
   display: none;
@@ -187,6 +186,74 @@ img {
   background-color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.formacao {
+  padding: 20px;
+  background-color: #292929;
+  color: #a3a3a3;
+}
+.formacao::before {
+  content: "formação";
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 5.625rem;
+  letter-spacing: 2px;
+}
+.formacao strong,
+.formacao h4 {
+  color: #fff;
+}
+.formacao__text {
+  display: none;
+}
+.formacao__data {
+  display: grid;
+  gap: 20px;
+}
+.formacao__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.formacao__box div {
+  background-color: #000;
+  flex: 1;
+  padding: 10px;
+  display: grid;
+}
+.formacao__box div h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.formacao__box div p {
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.formacao__cursos, .formacao__idiomas {
+  display: flex;
+  justify-content: stretch;
+  gap: 20px;
+  width: 100%;
+}
+.formacao__cursos div:last-child, .formacao__idiomas div:last-child {
+  flex: 1;
+}
+.formacao__cursos h4, .formacao__idiomas h4 {
+  margin-bottom: 10px;
+}
+.formacao__cursos ul li, .formacao__idiomas ul li {
+  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

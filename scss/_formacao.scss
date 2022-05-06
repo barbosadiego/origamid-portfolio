@@ -1,0 +1,83 @@
+@import './components/functions';
+@import './components/mixins';
+@import './components/variables';
+
+.formacao {
+  padding: 20px;
+  background-color: $c12;
+  color: $c6;
+
+  &::before{
+    content: 'formação';
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    font-size: rem(40);
+    font-weight: bold;
+    line-height: rem(90);
+    letter-spacing: 2px;
+  }
+
+  strong,
+  h4 {
+    color: #fff;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__data {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    div{
+      background-color: #000;
+      flex: 1;
+      padding: 10px;
+      display: grid;
+
+      h4{
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      p{
+        color: #fff;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__cursos,
+  &__idiomas{
+    display: flex;
+    justify-content: stretch;
+    gap: 20px;
+    width: 100%;
+
+    div:last-child{
+      flex: 1;
+    }
+    h4{
+      margin-bottom: 10px;
+    }
+
+    ul li{
+      margin-bottom: 10px;
+      flex: 1;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
