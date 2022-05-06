@@ -1,0 +1,72 @@
+@import './components/functions';
+@import './components/mixins';
+@import './components/variables';
+
+.experiencia {
+  padding: 10px;
+
+  &__text {
+    display: none;
+  }
+
+  &__info {
+    display: grid;
+    gap: 20px;
+
+    .text {
+      font-size: rem(24);
+    }
+  }
+
+  .ano {
+    font-weight: 400;
+    color: $c10;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  &__data {
+    background-color: $c2;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      font-size: rem(18);
+      font-weight: 700;
+    }
+
+    div:first-child h3::before{
+      content: '';
+      display: inline-block;
+      height: 20px;
+      width: 4px;
+      background: $gradient1;
+      position: absolute;
+      left: -4px;
+    }
+
+    p {
+      color: $c10;
+    }
+
+    .tags {
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      span {
+        background-color: $bg-color;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

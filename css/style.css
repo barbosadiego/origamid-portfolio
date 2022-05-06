@@ -132,4 +132,61 @@ img {
   z-index: -1;
 }
 
+.experiencia {
+  padding: 10px;
+}
+.experiencia__text {
+  display: none;
+}
+.experiencia__info {
+  display: grid;
+  gap: 20px;
+}
+.experiencia__info .text {
+  font-size: 1.5rem;
+}
+.experiencia .ano {
+  font-weight: 400;
+  color: #525252;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.experiencia__data {
+  background-color: #f0f0f0;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.experiencia__data h3 {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.experiencia__data div:first-child h3::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 4px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  position: absolute;
+  left: -4px;
+}
+.experiencia__data p {
+  color: #525252;
+}
+.experiencia__data .tags div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.experiencia__data .tags span {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
