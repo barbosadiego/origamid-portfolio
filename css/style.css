@@ -119,8 +119,6 @@ img {
   display: grid;
   place-items: center;
   z-index: 11;
-  position: fixed;
-  right: 20px;
   cursor: pointer;
   padding: 20px 10px;
 }
