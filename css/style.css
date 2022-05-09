@@ -81,6 +81,15 @@ img {
   gap: 3.125rem;
   transform: translateY(-100%);
 }
+@media screen and (min-width: 768px) {
+  .header .menu {
+    position: initial;
+    width: initial;
+    min-height: initial;
+    flex-direction: row;
+    transform: translateY(0);
+  }
+}
 .header .menu.active {
   transform: translateY(0%);
 }
@@ -89,9 +98,19 @@ img {
   font-size: 2.375rem;
   text-transform: capitalize;
 }
+@media screen and (min-width: 768px) {
+  .header .menu a {
+    font-size: 1.125rem;
+  }
+}
 .header .menu-mobile {
   display: grid;
   place-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header .menu-mobile {
+    display: none;
+  }
 }
 .header .menu-mobile .line {
   width: 28px;
@@ -113,8 +132,21 @@ img {
   display: grid;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .intro {
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+  }
+}
 .intro__img {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .intro__img {
+    display: initial;
+  }
 }
 .intro__text {
   width: 100%;
@@ -142,12 +174,36 @@ img {
 .experiencia {
   padding: 20px;
 }
+@media screen and (min-width: 768px) {
+  .experiencia {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    margin-bottom: 30px;
+  }
+}
 .experiencia__text {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .experiencia__text {
+    display: initial;
+    font-size: 7.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .experiencia__info {
   display: grid;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .experiencia__info {
+    margin-top: 20px;
+  }
 }
 .experiencia__info .text {
   font-size: 1.5rem;
@@ -161,6 +217,11 @@ img {
   font-weight: bold;
   line-height: 5.625rem;
   letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .experiencia__info::before {
+    display: none;
+  }
 }
 .experiencia .ano {
   font-weight: 400;
@@ -211,6 +272,12 @@ img {
   background-color: #292929;
   color: #a3a3a3;
 }
+@media screen and (min-width: 768px) {
+  .formacao {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+  }
+}
 .formacao::before {
   content: "formação";
   color: #000;
@@ -221,6 +288,11 @@ img {
   line-height: 5.625rem;
   letter-spacing: 2px;
 }
+@media screen and (min-width: 768px) {
+  .formacao::before {
+    display: none;
+  }
+}
 .formacao strong,
 .formacao h4 {
   color: #fff;
@@ -228,9 +300,23 @@ img {
 .formacao__text {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .formacao__text {
+    display: initial;
+    font-size: 6.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
 .formacao__data {
   display: grid;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .formacao__data {
+    margin-top: 20px;
+  }
 }
 .formacao__box {
   display: flex;
@@ -280,6 +366,20 @@ img {
   background-color: #141414;
   display: grid;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__info a {
+    font-size: 2.25rem;
+    margin-left: 30px;
+  }
 }
 .footer p {
   color: #cccccc;

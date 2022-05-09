@@ -24,6 +24,14 @@
     justify-content: center;
     gap: rem(50);
     transform: translateY(-100%);
+    @include device(tablet){
+      position: initial;
+      width: initial;
+      min-height: initial;
+      flex-direction: row;
+      transform: translateY(0);
+    }
+
     &.active {
       transform: translateY(0%);
     }
@@ -32,12 +40,18 @@
       color: $c13;
       font-size: rem(38);
       text-transform: capitalize;
+      @include device(tablet){
+        font-size: rem(18);
+      }
     }
   }
 
   .menu-mobile {
     display: grid;
     place-items: center;
+    @include device(tablet){
+      display: none;
+    }
     .line {
       width: 28px;
       height: 5px;

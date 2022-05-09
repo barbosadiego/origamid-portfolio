@@ -6,6 +6,10 @@
   padding: 20px;
   background-color: $c12;
   color: $c6;
+  @include device(tablet){
+    display: grid;
+    grid-template-columns: 330px 1fr;
+  }
 
   &::before{
     content: 'formação';
@@ -16,6 +20,9 @@
     font-weight: bold;
     line-height: rem(90);
     letter-spacing: 2px;
+    @include device(tablet){
+      display: none;
+    }
   }
 
   strong,
@@ -25,11 +32,21 @@
 
   &__text {
     display: none;
+    @include device(tablet){
+      display: initial;
+      font-size: rem(110);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+    }
   }
 
   &__data {
     display: grid;
     gap: 30px;
+    @include device(tablet){
+      margin-top: 20px;
+    }
   }
 
   &__box{

@@ -5,9 +5,18 @@
 .intro{
   display: grid;
   justify-content: center;
+  @include device(tablet){
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+  }
   
   &__img{
     display: none;
+    @include device(tablet){
+      display: initial;
+     }
   }
 
   &__text{

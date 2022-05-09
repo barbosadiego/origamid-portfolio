@@ -7,6 +7,21 @@
   background-color: $c13;
   display: grid;
   gap: 20px;
+  @include device(tablet){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  &__info{
+    @include device(tablet){
+      a{
+        font-size: rem(36);
+        margin-left: 30px;
+      }
+    }
+  }
 
   p{
     color: $c4;
