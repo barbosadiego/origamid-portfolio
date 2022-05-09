@@ -24,6 +24,8 @@
     justify-content: center;
     gap: rem(50);
     transform: translateY(-100%);
+    z-index: 10;
+    transition: .3s;
     @include device(tablet){
       position: initial;
       width: initial;
@@ -49,6 +51,11 @@
   .menu-mobile {
     display: grid;
     place-items: center;
+    z-index: 11;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    padding: 20px 10px;
     @include device(tablet){
       display: none;
     }

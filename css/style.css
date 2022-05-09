@@ -90,6 +90,8 @@ img {
   justify-content: center;
   gap: 3.125rem;
   transform: translateY(-100%);
+  z-index: 10;
+  transition: 0.3s;
 }
 @media screen and (min-width: 768px) {
   .header .menu {
@@ -116,6 +118,11 @@ img {
 .header .menu-mobile {
   display: grid;
   place-items: center;
+  z-index: 11;
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  padding: 20px 10px;
 }
 @media screen and (min-width: 768px) {
   .header .menu-mobile {
