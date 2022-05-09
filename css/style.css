@@ -495,7 +495,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: -50px;
+    top: -70px;
     left: 20px;
     z-index: 2;
   }
@@ -504,7 +504,7 @@ img {
   .footer .container {
     max-width: 1160px;
     margin: 0 auto;
-    padding: 120px 0;
+    padding: 120px 0 30px;
   }
 }
 .footer__info a {
