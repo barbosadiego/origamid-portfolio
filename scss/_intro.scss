@@ -2,7 +2,7 @@
 @import './components/variables';
 @import './components/mixins';
 
-.intro{
+.intro {
   display: grid;
   justify-content: center;
   @include device(tablet){
@@ -11,12 +11,24 @@
     gap: 70px;
     padding: 20px;
   }
+  @include device(desktop){
+    grid-template-columns: 1fr 2fr;
+    gap: 140px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    @include desktop
+  }
   
   &__img{
     display: none;
     @include device(tablet){
       display: initial;
-     }
+    }
+    @include device(desktop){
+      img{
+        height: 500px;
+      }
+    }
   }
 
   &__text{
@@ -27,6 +39,9 @@
       font-size: rem(50);
       text-transform: capitalize;
       margin-bottom: 15px;
+      @include device(desktop){
+        font-size: rem(72);
+      }
 
       &::before{
         content: '';
@@ -40,6 +55,12 @@
         top: -5px;
         left: -15px;
         z-index: -1;
+      }
+    }
+
+    p{
+      @include device(desktop){
+        font-size: rem(24);
       }
     }
   }

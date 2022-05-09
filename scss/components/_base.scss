@@ -15,6 +15,11 @@ body{
   flex-direction: column;
 }
 
+.container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 article{
   padding: 20px 0;
 }

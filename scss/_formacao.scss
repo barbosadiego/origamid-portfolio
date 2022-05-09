@@ -6,12 +6,22 @@
   padding: 20px;
   background-color: $c12;
   color: $c6;
-  @include device(tablet){
-    display: grid;
-    grid-template-columns: 330px 1fr;
+  @include device(tablet) {
+    .container {
+      display: grid;
+      grid-template-columns: 330px 1fr;
+    }
+  }
+  @include device(desktop) {
+    .container{
+      @include desktop;
+      grid-template-columns: 230px 1fr;
+      gap: 110px;
+      padding: 110px 0;
+    }
   }
 
-  &::before{
+  &::before {
     content: 'formação';
     color: #000;
     display: block;
@@ -20,7 +30,7 @@
     font-weight: bold;
     line-height: rem(90);
     letter-spacing: 2px;
-    @include device(tablet){
+    @include device(tablet) {
       display: none;
     }
   }
@@ -32,7 +42,7 @@
 
   &__text {
     display: none;
-    @include device(tablet){
+    @include device(tablet) {
       display: initial;
       font-size: rem(110);
       font-weight: bold;
@@ -44,30 +54,47 @@
   &__data {
     display: grid;
     gap: 30px;
-    @include device(tablet){
+    @include device(tablet) {
       margin-top: 20px;
+    }
+    @include device(desktop){
+      grid-template-columns: 80px 1fr;
+
+      div, p{
+        grid-column: 2/3;
+      }
+
+      p{
+        max-width: 520px;
+        font-size: rem(24);
+      }
     }
   }
 
-  &__box{
+  &__box {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    
-    div{
+
+    div {
       background-color: #000;
       flex: 1;
       padding: 10px;
       display: grid;
       border-radius: 3px;
+      @include device(desktop){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-      h4{
+      h4 {
         font-weight: 400;
         text-transform: uppercase;
         margin-bottom: 15px;
       }
 
-      p{
+      p {
         color: #fff;
         font-weight: bold;
         text-transform: capitalize;
@@ -77,20 +104,20 @@
   }
 
   &__cursos,
-  &__idiomas{
+  &__idiomas {
     display: flex;
     justify-content: stretch;
     gap: 20px;
     width: 100%;
 
-    div:last-child{
+    div:last-child {
       flex: 1;
     }
-    h4{
+    h4 {
       margin-bottom: 10px;
     }
 
-    ul li{
+    ul li {
       margin-bottom: 10px;
       flex: 1;
       display: flex;

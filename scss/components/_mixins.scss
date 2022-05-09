@@ -5,8 +5,13 @@
     }
   }
   @if $device == desktop{
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1150px) {
       @content;
     }
   }
+}
+
+@mixin desktop{
+  max-width: 1160px;
+  margin: 0 auto;
 }

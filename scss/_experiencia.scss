@@ -9,6 +9,18 @@
     grid-template-columns: 330px 1fr;
     margin-bottom: 30px;
   }
+  @include device(desktop){
+    grid-template-columns: 230px 1fr;
+    gap: 110px;
+    padding: 0;
+    @include desktop;
+    margin-bottom: 60px;
+
+    &__box{
+      display: flex;
+      gap: 60px;
+    }
+  }
 
   &__text {
     display: none;
@@ -29,6 +41,18 @@
     gap: 20px;
     @include device(tablet){
       margin-top: 20px;
+    }
+    @include device(desktop){
+      grid-template-columns: 80px 1fr;
+      .experiencia__box{
+        grid-column: 2/3;
+        position: relative;
+      }
+      .text{
+        grid-column: 2/3;
+        margin-bottom: 60px;
+        max-width: 560px;
+      }
     }
 
     .text {
@@ -56,6 +80,14 @@
     display: block;
     margin-bottom: 10px;
     margin-left: 10px;
+    @include device(desktop){
+      position: absolute;
+      top: 30px;
+      left: -100px;
+      text-align: right;
+      margin: 0;
+      width: 80px;
+    }
   }
 
   &__data {
@@ -65,6 +97,10 @@
     padding: 10px;
     border-radius: 5px;
     position: relative;
+    @include device(desktop){
+      grid-template-columns: 2fr 1fr;
+      padding: 30px;
+    }
 
     h3 {
       text-transform: capitalize;
@@ -85,6 +121,9 @@
 
     p {
       color: $c10;
+      @include device(desktop){
+        font-size: rem(14);
+      }
     }
 
     .tags {
@@ -98,6 +137,7 @@
         background-color: $bg-color;
         padding: 5px 10px;
         border-radius: 5px;
+        font-size: rem(14);
       }
     }
   }
